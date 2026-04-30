@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Bliss | Explore Stories</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Blog Bliss</h1>
+        <div id="auth-buttons">
+            <button id="login-btn">Login</button>
+            <a href="admin.html" id="admin-link" style="display:none;">Write Blog</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="blog-feed">
+            <!-- Blogs will be injected here by JavaScript -->
+        </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
