@@ -1,0 +1,13 @@
+body { font-family: 'Helvetica Neue', sans-serif; background-color: #f9f9f9; color: #333; margin: 0; }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+.container { max-width: 900px; margin: 20px auto; padding: 0 20px; }
+
+.blog-card { background: white; margin-bottom: 30px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+.blog-card:hover { transform: translateY(-5px); }
+.blog-card img { width: 100%; height: 300px; object-fit: cover; }
+.blog-card h2, .blog-card p, .blog-card small { padding: 10px 20px; }
+
+@media (max-width: 600px) {
+    .blog-card img { height: 200px; }
+}
